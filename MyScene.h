@@ -11,6 +11,7 @@ public:
     MyScene(QObject* parent = nullptr);
     virtual ~MyScene();
 
+
 };
 
 

@@ -28,4 +28,5 @@ class MainWindow : public QMainWindow {
 };
 
 
+
 #endif //CPP_QT_TPMINIPROJET_MAINWINDOW_H

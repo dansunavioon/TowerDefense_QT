@@ -12,5 +12,6 @@ add_executable(Projet_QT
         MainWindow.cpp
         MyScene.cpp
         MyScene.cpp
+
 )
 target_link_libraries(Projet_QT PRIVATE Qt6::Widgets)
