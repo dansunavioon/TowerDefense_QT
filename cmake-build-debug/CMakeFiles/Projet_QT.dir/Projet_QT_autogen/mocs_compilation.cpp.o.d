@@ -396,5 +396,11 @@ CMakeFiles/Projet_QT.dir/Projet_QT_autogen/mocs_compilation.cpp.o: \
  /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/cmake-build-debug/Projet_QT_autogen/EWIEGA46WW/../../../MyScene.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
  /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/cmake-build-debug/Projet_QT_autogen/EWIEGA46WW/moc_MyScene.cpp \
  /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/cmake-build-debug/Projet_QT_autogen/EWIEGA46WW/../../../MyScene.h
