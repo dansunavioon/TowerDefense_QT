@@ -12,12 +12,13 @@ public:
     MyScene(QObject* parent = nullptr);
     virtual ~MyScene();
 
+public slots:
     void update();
 
 private:
-    QTimer* timer;
-    QGraphicsRectItem* qgri;
-    QGraphicsTextItem* qgti;
+    QTimer* timer = nullptr;
+    QGraphicsRectItem* qgri = nullptr;
+    QGraphicsTextItem* qgti = nullptr;
 
 };
 

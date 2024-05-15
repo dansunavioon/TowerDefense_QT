@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 3.25)
 project(Projet_QT)
 
 set(CMAKE_CXX_STANDARD 23) # si nécessaire
-set(CMAKE_AUTOMOC ON)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 qt_standard_project_setup()
+set(CMAKE_AUTOMOC ON)
 add_executable(Projet_QT
         main.cpp
         MainWindow.cpp
