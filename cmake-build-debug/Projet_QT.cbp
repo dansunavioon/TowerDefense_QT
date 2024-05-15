@@ -110,16 +110,46 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Assaillant/enemy.cpp">
+			<Option target="Projet_QT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Assaillant/enemy.h">
+			<Option target="Projet_QT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Castle/castle.cpp">
+			<Option target="Projet_QT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Castle/castle.h">
+			<Option target="Projet_QT"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/MainWindow.cpp">
 			<Option target="Projet_QT"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/MainWindow.h">
 			<Option target="Projet_QT"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Map/map_bloc.cpp">
+			<Option target="Projet_QT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Map/map_bloc.h">
+			<Option target="Projet_QT"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/MyScene.cpp">
 			<Option target="Projet_QT"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/MyScene.h">
+			<Option target="Projet_QT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Position/positon.cpp">
+			<Option target="Projet_QT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Position/positon.h">
+			<Option target="Projet_QT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Tower/tower.cpp">
+			<Option target="Projet_QT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Tower/tower.h">
 			<Option target="Projet_QT"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/Projet_QT_autogen/mocs_compilation.cpp">

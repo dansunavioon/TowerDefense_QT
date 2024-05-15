@@ -24,7 +24,7 @@ class MainWindow : public QMainWindow {
         virtual ~MainWindow();
 
     public slots:
-        void slot_aboutMenu();
+        // void slot_aboutMenu();
 };
 
 

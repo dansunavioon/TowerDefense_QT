@@ -12,6 +12,20 @@ add_executable(Projet_QT
         MainWindow.cpp
         MyScene.cpp
         MyScene.cpp
+        Tower/tower.cpp
+        Tower/tower.h
+        Tower/tower.h
+        Position/positon.cpp
+        Position/positon.h
+        Map/map_bloc.cpp
+        Map/map_bloc.h
+        Map/map_bloc.h
+        Castle/castle.cpp
+        Castle/castle.h
+        Castle/castle.h
+        Assaillant/enemy.cpp
+        Assaillant/enemy.h
+        Assaillant/enemy.h
 
 )
 target_link_libraries(Projet_QT PRIVATE Qt6::Widgets)

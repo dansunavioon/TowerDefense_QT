@@ -142,6 +142,54 @@ Projet_QT_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT_autogen.dir/build.make CMakeFiles/Projet_QT_autogen.dir/build
 .PHONY : Projet_QT_autogen/fast
 
+Assaillant/enemy.o: Assaillant/enemy.cpp.o
+.PHONY : Assaillant/enemy.o
+
+# target to build an object file
+Assaillant/enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Assaillant/enemy.cpp.o
+.PHONY : Assaillant/enemy.cpp.o
+
+Assaillant/enemy.i: Assaillant/enemy.cpp.i
+.PHONY : Assaillant/enemy.i
+
+# target to preprocess a source file
+Assaillant/enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Assaillant/enemy.cpp.i
+.PHONY : Assaillant/enemy.cpp.i
+
+Assaillant/enemy.s: Assaillant/enemy.cpp.s
+.PHONY : Assaillant/enemy.s
+
+# target to generate assembly for a file
+Assaillant/enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Assaillant/enemy.cpp.s
+.PHONY : Assaillant/enemy.cpp.s
+
+Castle/castle.o: Castle/castle.cpp.o
+.PHONY : Castle/castle.o
+
+# target to build an object file
+Castle/castle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Castle/castle.cpp.o
+.PHONY : Castle/castle.cpp.o
+
+Castle/castle.i: Castle/castle.cpp.i
+.PHONY : Castle/castle.i
+
+# target to preprocess a source file
+Castle/castle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Castle/castle.cpp.i
+.PHONY : Castle/castle.cpp.i
+
+Castle/castle.s: Castle/castle.cpp.s
+.PHONY : Castle/castle.s
+
+# target to generate assembly for a file
+Castle/castle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Castle/castle.cpp.s
+.PHONY : Castle/castle.cpp.s
+
 MainWindow.o: MainWindow.cpp.o
 .PHONY : MainWindow.o
 
@@ -165,6 +213,30 @@ MainWindow.s: MainWindow.cpp.s
 MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/MainWindow.cpp.s
 .PHONY : MainWindow.cpp.s
+
+Map/map_bloc.o: Map/map_bloc.cpp.o
+.PHONY : Map/map_bloc.o
+
+# target to build an object file
+Map/map_bloc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.o
+.PHONY : Map/map_bloc.cpp.o
+
+Map/map_bloc.i: Map/map_bloc.cpp.i
+.PHONY : Map/map_bloc.i
+
+# target to preprocess a source file
+Map/map_bloc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.i
+.PHONY : Map/map_bloc.cpp.i
+
+Map/map_bloc.s: Map/map_bloc.cpp.s
+.PHONY : Map/map_bloc.s
+
+# target to generate assembly for a file
+Map/map_bloc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.s
+.PHONY : Map/map_bloc.cpp.s
 
 MyScene.o: MyScene.cpp.o
 .PHONY : MyScene.o
@@ -190,6 +262,30 @@ MyScene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/MyScene.cpp.s
 .PHONY : MyScene.cpp.s
 
+Position/positon.o: Position/positon.cpp.o
+.PHONY : Position/positon.o
+
+# target to build an object file
+Position/positon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Position/positon.cpp.o
+.PHONY : Position/positon.cpp.o
+
+Position/positon.i: Position/positon.cpp.i
+.PHONY : Position/positon.i
+
+# target to preprocess a source file
+Position/positon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Position/positon.cpp.i
+.PHONY : Position/positon.cpp.i
+
+Position/positon.s: Position/positon.cpp.s
+.PHONY : Position/positon.s
+
+# target to generate assembly for a file
+Position/positon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Position/positon.cpp.s
+.PHONY : Position/positon.cpp.s
+
 Projet_QT_autogen/mocs_compilation.o: Projet_QT_autogen/mocs_compilation.cpp.o
 .PHONY : Projet_QT_autogen/mocs_compilation.o
 
@@ -213,6 +309,30 @@ Projet_QT_autogen/mocs_compilation.s: Projet_QT_autogen/mocs_compilation.cpp.s
 Projet_QT_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Projet_QT_autogen/mocs_compilation.cpp.s
 .PHONY : Projet_QT_autogen/mocs_compilation.cpp.s
+
+Tower/tower.o: Tower/tower.cpp.o
+.PHONY : Tower/tower.o
+
+# target to build an object file
+Tower/tower.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Tower/tower.cpp.o
+.PHONY : Tower/tower.cpp.o
+
+Tower/tower.i: Tower/tower.cpp.i
+.PHONY : Tower/tower.i
+
+# target to preprocess a source file
+Tower/tower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Tower/tower.cpp.i
+.PHONY : Tower/tower.cpp.i
+
+Tower/tower.s: Tower/tower.cpp.s
+.PHONY : Tower/tower.s
+
+# target to generate assembly for a file
+Tower/tower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Tower/tower.cpp.s
+.PHONY : Tower/tower.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -248,15 +368,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Projet_QT_autogen"
 	@echo "... Projet_QT"
+	@echo "... Assaillant/enemy.o"
+	@echo "... Assaillant/enemy.i"
+	@echo "... Assaillant/enemy.s"
+	@echo "... Castle/castle.o"
+	@echo "... Castle/castle.i"
+	@echo "... Castle/castle.s"
 	@echo "... MainWindow.o"
 	@echo "... MainWindow.i"
 	@echo "... MainWindow.s"
+	@echo "... Map/map_bloc.o"
+	@echo "... Map/map_bloc.i"
+	@echo "... Map/map_bloc.s"
 	@echo "... MyScene.o"
 	@echo "... MyScene.i"
 	@echo "... MyScene.s"
+	@echo "... Position/positon.o"
+	@echo "... Position/positon.i"
+	@echo "... Position/positon.s"
 	@echo "... Projet_QT_autogen/mocs_compilation.o"
 	@echo "... Projet_QT_autogen/mocs_compilation.i"
 	@echo "... Projet_QT_autogen/mocs_compilation.s"
+	@echo "... Tower/tower.o"
+	@echo "... Tower/tower.i"
+	@echo "... Tower/tower.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

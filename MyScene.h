@@ -12,7 +12,6 @@ public:
     MyScene(QObject* parent = nullptr);
     virtual ~MyScene();
 
-public slots:
     void update();
 
 private:

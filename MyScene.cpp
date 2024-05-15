@@ -1,5 +1,6 @@
 #include "MyScene.h"
 #include <iostream>
+#include <QPointF>
 
 using namespace std;
 
@@ -19,6 +20,6 @@ MyScene::~MyScene() {
 }
 
 void MyScene::update() {
-    //QPointF pos = qgti->pos(); //récupération de la position de l’objet qgti
-    //qgti->setPos(pos.rx(), pos.ry()+1); //incrémentation de la coordonnée y
+    QPointF pos = qgti->pos();
+    qgti->setPos(pos.rx(), pos.ry()+50);
 }
