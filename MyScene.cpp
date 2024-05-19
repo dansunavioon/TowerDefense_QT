@@ -20,6 +20,20 @@ MyScene::~MyScene() {
 }
 
 void MyScene::update() {
+
+}
+
+Menu::Menu(QObject* parent) : QGraphicsScene(parent) {
+    this->addItem(qgri);
+    timer = new QTimer(this);
+}
+
+Menu::~Menu() {
+
+
+}
+
+void Menu::update() {
     QPointF pos = qgti->pos();
     qDebug() << pos;
     qgti->setPos(pos.rx(), pos.ry()+1);
