@@ -22,5 +22,21 @@ private:
 
 };
 
+class Menu: public QGraphicsScene {
+Q_OBJECT
+
+public:
+    Menu(QObject* parent = nullptr);
+    virtual ~Menu();
+
+public slots:
+    void update();
+
+private:
+    QGraphicsRectItem* qgri = nullptr;
+    QGraphicsTextItem* qgti = nullptr;
+
+};
+
 
 #endif //CPP_QT_TPMINIPROJET_MYSCENE_H
