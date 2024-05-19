@@ -20,9 +20,6 @@ add_executable(Projet_QT
         Map/map_bloc.cpp
         Map/map_bloc.h
         Map/map_bloc.h
-        Castle/castle.cpp
-        Castle/castle.h
-        Castle/castle.h
         Assaillant/enemy.cpp
         Assaillant/enemy.h
         Assaillant/enemy.h
