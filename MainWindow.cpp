@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 
     this->setCentralWidget(mainView);
     this->setWindowTitle("Tower Defense by StudioXY");
-    this->resize(1600, 1100);
+    this->resize(800, 600); // Game : 1600px/1100px
 
 /*
     helpMenu = menuBar()->addMenu(tr("&Help"));

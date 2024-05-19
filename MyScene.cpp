@@ -50,3 +50,7 @@ void Menu::askPseudo() {
         qDebug() << "Pseudo entered:" << pseudo;
     }
 }
+
+Game::Game(QObject *parent) : QGraphicsScene(parent) {
+    // à compléter
+}

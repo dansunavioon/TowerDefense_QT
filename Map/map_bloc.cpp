@@ -6,9 +6,8 @@
 
 
 // ------------------------------------------ Herbe
-bloc_herbe::bloc_herbe(QGraphicsItem *parent) : QGraphicsPixmapItem(parent) {
-    QPixmap pixmap(":/ressources/bloc_herbe.png");
-    setPixmap(pixmap);
+bloc_herbe::bloc_herbe(QGraphicsItem *parent) : QObject(), QGraphicsPixmapItem(parent) {
+    setPixmap(QPixmap(":/ressources/bloc_herbe.png"));
 
     int rotation = QRandomGenerator::global()->bounded(0, 360);
     setRotation(rotation);
@@ -16,9 +15,8 @@ bloc_herbe::bloc_herbe(QGraphicsItem *parent) : QGraphicsPixmapItem(parent) {
 
 
 // ------------------------------------------ Pierre
-bloc_pierre::bloc_pierre(QGraphicsItem *parent) : QGraphicsPixmapItem(parent) {
-    QPixmap pixmap(":/ressources/bloc_pierre.png");
-    setPixmap(pixmap);
+bloc_pierre::bloc_pierre(QGraphicsItem *parent) : QObject(), QGraphicsPixmapItem(parent) {
+    setPixmap(QPixmap(":/ressources/bloc_pierre.png"));
 }
 
 void bloc_pierre::click_pierre(QGraphicsSceneMouseEvent *event) {
@@ -28,9 +26,8 @@ void bloc_pierre::click_pierre(QGraphicsSceneMouseEvent *event) {
 
 
 // ------------------------------------------ Chemin
-bloc_chemin::bloc_chemin(QGraphicsItem *parent) : QGraphicsPixmapItem(parent) {
-    QPixmap pixmap(":/ressources/bloc_chemin.png");
-    setPixmap(pixmap);
+bloc_chemin::bloc_chemin(QGraphicsItem *parent) : QObject(), QGraphicsPixmapItem(parent) {
+    setPixmap(QPixmap(":/ressources/bloc_chemin.png"));
 }
 
 

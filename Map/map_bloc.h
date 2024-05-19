@@ -18,7 +18,7 @@
 
 
 // ------------------------------------------ Herbe
-class bloc_herbe : public QGraphicsPixmapItem {
+class bloc_herbe : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
     bloc_herbe(QGraphicsItem *parent = nullptr);
@@ -26,7 +26,7 @@ public:
 
 
 // ------------------------------------------ Pierre
-class bloc_pierre : public QGraphicsPixmapItem {
+class bloc_pierre : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
     bloc_pierre(QGraphicsItem *parent = nullptr);
@@ -36,7 +36,7 @@ protected: // permet de limiter l'appel de cette fonction (depuis l'ext)
 
 
 // ------------------------------------------ Chemin
-class bloc_chemin : public QGraphicsPixmapItem {
+class bloc_chemin : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
     bloc_chemin(QGraphicsItem *parent = nullptr);
@@ -44,10 +44,10 @@ public:
 
 
 // ------------------------------------------ Chateau
-class chateau : public QGraphicsPixmapItem {
+class chateau : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
-    chateau(QGraphicsItem *parent = nullptr) : QGraphicsPixmapItem(QPixmap(":/ressources/chateau.png"), parent), vie(100), max_vie(100) {
+    chateau(QGraphicsItem *parent = nullptr) : QObject(), QGraphicsPixmapItem(QPixmap(":/ressources/chateau.png"), parent), vie(100), max_vie(100) {
         progressBar = new QProgressBar();
         progressBar->setRange(0, max_vie);
         progressBar->setValue(vie);

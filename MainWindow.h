@@ -14,7 +14,7 @@ class MainWindow : public QMainWindow {
     Q_OBJECT
 
     private :
-        MyScene* mainScene;
+        Menu* mainScene;
         QGraphicsView* mainView;
         QMenu* helpMenu;
 

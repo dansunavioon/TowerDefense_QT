@@ -4,7 +4,7 @@
 
 #include "tower.h"
 
-tower::tower(QGraphicsItem *parent) : QGraphicsPixmapItem(parent), degats(10), portee(100), cadence_tir(1000), cible(nullptr) {
+tower::tower(QGraphicsItem *parent) : QObject(), QGraphicsPixmapItem(parent), degats(10), portee(100), cadence_tir(1000), cible(nullptr) {
     setPixmap(QPixmap(":/ressources/test_tower.png"));
     // mecanique de tirs
     minuteur_tir = new QTimer(this);
