@@ -16,12 +16,14 @@
 #include <QVBoxLayout>
 #include <QGraphicsProxyWidget>
 
+
 // ------------------------------------------ Herbe
 class bloc_herbe : public QGraphicsPixmapItem {
     Q_OBJECT
 public:
     bloc_herbe(QGraphicsItem *parent = nullptr);
 };
+
 
 // ------------------------------------------ Pierre
 class bloc_pierre : public QGraphicsPixmapItem {
@@ -32,6 +34,7 @@ protected: // permet de limiter l'appel de cette fonction (depuis l'ext)
     void click_pierre(QGraphicsSceneMouseEvent *event);
 };
 
+
 // ------------------------------------------ Chemin
 class bloc_chemin : public QGraphicsPixmapItem {
     Q_OBJECT
@@ -39,13 +42,14 @@ public:
     bloc_chemin(QGraphicsItem *parent = nullptr);
 };
 
+
 // ------------------------------------------ Chateau
 class chateau : public QGraphicsPixmapItem {
     Q_OBJECT
 public:
-    chateau(QGraphicsItem *parent = nullptr) : QGraphicsPixmapItem(QPixmap(":/ressources/chateau.png"), parent), vie(100), maxVie(100) {
+    chateau(QGraphicsItem *parent = nullptr) : QGraphicsPixmapItem(QPixmap(":/ressources/chateau.png"), parent), vie(100), max_vie(100) {
         progressBar = new QProgressBar();
-        progressBar->setRange(0, maxVie);
+        progressBar->setRange(0, max_vie);
         progressBar->setValue(vie);
 
         QVBoxLayout *layout = new QVBoxLayout();
@@ -68,8 +72,9 @@ private:
     QProgressBar *progressBar;
     QGraphicsProxyWidget *proxyWidget;
     int vie;
-    int maxVie;
+    int max_vie;
 };
+
 
 // ------------------------------------------ Map Générale
 class map_bloc : public QGraphicsScene {

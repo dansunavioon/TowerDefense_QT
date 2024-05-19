@@ -5,13 +5,24 @@
 #ifndef PROJET_QT_ENEMY_H
 #define PROJET_QT_ENEMY_H
 
-#include <QGraphicsScene>
-#include <QGraphicsItem>
+#include <QGraphicsPixmapItem>
+#include <QProgressBar>
+#include <QGraphicsProxyWidget>
+#include <QVBoxLayout>
 
-class enemy : public QGraphicsScene {
-    Q_OBJECT
+class enemy : public QGraphicsPixmapItem {
+public:
+    enemy(int ligne, int colonne, QGraphicsItem *parent = nullptr);
 
+    void recevoir_degats(int degats);
+    void avancer();
 
+private:
+    int sante;
+    int max_sante;
+    QProgressBar *barreVie;
+    QGraphicsProxyWidget *proxyWidget;
+    QPointF position1;
 };
 
 

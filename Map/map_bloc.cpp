@@ -4,6 +4,7 @@
 
 #include "map_bloc.h"
 
+
 // ------------------------------------------ Herbe
 bloc_herbe::bloc_herbe(QGraphicsItem *parent) : QGraphicsPixmapItem(parent) {
     QPixmap pixmap(":/ressources/bloc_herbe.png");
@@ -12,6 +13,7 @@ bloc_herbe::bloc_herbe(QGraphicsItem *parent) : QGraphicsPixmapItem(parent) {
     int rotation = QRandomGenerator::global()->bounded(0, 360);
     setRotation(rotation);
 }
+
 
 // ------------------------------------------ Pierre
 bloc_pierre::bloc_pierre(QGraphicsItem *parent) : QGraphicsPixmapItem(parent) {
@@ -24,11 +26,13 @@ void bloc_pierre::click_pierre(QGraphicsSceneMouseEvent *event) {
     QMessageBox::information(nullptr, "Bloc de Pierre", "Clic sur le bloc de pierre !");
 }
 
+
 // ------------------------------------------ Chemin
 bloc_chemin::bloc_chemin(QGraphicsItem *parent) : QGraphicsPixmapItem(parent) {
     QPixmap pixmap(":/ressources/bloc_chemin.png");
     setPixmap(pixmap);
 }
+
 
 // ------------------------------------------ Chateau
 void chateau::perdre_vie(int degats) {
@@ -36,6 +40,7 @@ void chateau::perdre_vie(int degats) {
     vie -= degats;
     progressBar->setValue(vie);
 }
+
 
 // ------------------------------------------ Map Générale
 map_bloc::map_bloc(QObject *parent) : QGraphicsScene(parent) {

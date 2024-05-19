@@ -15,8 +15,6 @@ add_executable(Projet_QT
         Tower/tower.cpp
         Tower/tower.h
         Tower/tower.h
-        Position/positon.cpp
-        Position/positon.h
         Map/map_bloc.cpp
         Map/map_bloc.h
         Map/map_bloc.h

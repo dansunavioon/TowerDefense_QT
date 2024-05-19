@@ -2,8 +2,13 @@
 #define CPP_QT_TPMINIPROJET_MYSCENE_H
 
 #include <QGraphicsScene>
+#include "Map/map_bloc.h"
+#include "Tower/tower.h"
+#include "Assaillant/enemy.h"
+
 #include <QGraphicsItem>
 #include <QTimer>
+#include <QVector>
 
 class MyScene : public QGraphicsScene {
     Q_OBJECT
@@ -22,9 +27,10 @@ private:
 
 };
 
-class Menu: public QGraphicsScene {
-Q_OBJECT
 
+// ------------------------------------------ MENU
+class Menu : public QGraphicsScene {
+    Q_OBJECT
 public:
     Menu(QObject* parent = nullptr);
     virtual ~Menu();
@@ -37,6 +43,18 @@ private:
     QGraphicsTextItem* qgti = nullptr;
 
 };
+
+
+// ------------------------------------------ JEU
+class Game : public QGraphicsScene {
+    Q_OBJECT
+public:
+    Game(QObject *parent = nullptr);
+
+private:
+    map_bloc *map;
+};
+
 
 
 #endif //CPP_QT_TPMINIPROJET_MYSCENE_H
