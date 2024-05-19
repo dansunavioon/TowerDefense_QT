@@ -1,40 +1,52 @@
 #include "MyScene.h"
-#include <iostream>
-#include <QPointF>
 
 using namespace std;
 
-MyScene::MyScene(QObject* parent) : QGraphicsScene(parent) {
-    qgri = new QGraphicsRectItem(10, 100, 300, 200);
-    this->addItem(qgri);
-    qgti = new QGraphicsTextItem("CIR2 Nantes");
-    this->addItem(qgti);
-    timer = new QTimer(this);
-    connect(timer, &QTimer::timeout, this, &MyScene::update);
-    timer->start(30); //toutes les 30 millisecondes
-}
 
-MyScene::~MyScene() {
-
-
-}
-
-void MyScene::update() {
-
-}
-
+// ------------------------------------------ MENU
 Menu::Menu(QObject* parent) : QGraphicsScene(parent) {
-    this->addItem(qgri);
-    timer = new QTimer(this);
-}
 
+    pseudo = "";
+
+    playButton = new QPushButton("Play");
+    connect(playButton, &QPushButton::clicked, this, &Menu::askPseudo);
+    settingsButton = new QPushButton("Settings");
+    classementButton = new QPushButton("Classement");
+
+    QHBoxLayout *flayout = new QHBoxLayout();
+    QVBoxLayout *layout = new QVBoxLayout();
+    flayout->addWidget(playButton);
+
+    flayout->addWidget(settingsButton);
+    layout->addLayout(flayout);
+    layout->addWidget(classementButton);
+
+    // Créer un widget pour contenir le layout
+    QWidget *container = new QWidget();
+    container->setLayout(layout);
+
+
+
+    // Créer un proxy widget pour contenir le widget
+    QGraphicsProxyWidget *proxyWidget = new QGraphicsProxyWidget();
+    proxyWidget->setWidget(container);
+
+    // Ajouter le proxy widget à la scène
+    this->addItem(proxyWidget);
+
+
+    // Positionner le proxy widget
+    //proxyWidget->setPos(0, 0);
+}
 Menu::~Menu() {
 
-
 }
 
-void Menu::update() {
-    QPointF pos = qgti->pos();
-    qDebug() << pos;
-    qgti->setPos(pos.rx(), pos.ry()+1);
+void Menu::askPseudo() {
+    bool ok;
+    QString text = QInputDialog::getText(nullptr, tr("Enter Pseudo"),tr("Pseudo:"), QLineEdit::Normal,"", &ok);
+    if (ok && !text.isEmpty()) {
+        pseudo = text;
+        qDebug() << "Pseudo entered:" << pseudo;
+    }
 }

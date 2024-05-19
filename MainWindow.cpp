@@ -3,7 +3,7 @@
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
 
-    this->mainScene = new MyScene;
+    this->mainScene = new Menu;
 
     this->mainView = new QGraphicsView;
     this->mainView->setScene(mainScene);

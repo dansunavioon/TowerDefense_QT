@@ -33,7 +33,7 @@ void tower::enemy_cible() {
         }
     }
     // maj cible
-    cible = dynamic_cast<enemy *>(nouvelle_cible);
+    cible = dynamic_cast<enemy*>(nouvelle_cible);
 }
 
 void tower::attaquer_ennemi() {

@@ -9,23 +9,13 @@
 #include <QGraphicsItem>
 #include <QTimer>
 #include <QVector>
-
-class MyScene : public QGraphicsScene {
-    Q_OBJECT
-
-public:
-    MyScene(QObject* parent = nullptr);
-    virtual ~MyScene();
-
-public slots:
-    void update();
-
-private:
-    QTimer* timer = nullptr;
-    QGraphicsRectItem* qgri = nullptr;
-    QGraphicsTextItem* qgti = nullptr;
-
-};
+#include <iostream>
+#include <QPointF>
+#include <QPushButton>
+#include <QVBoxLayout>
+#include <QGraphicsProxyWidget>
+#include <QWidget>
+#include <QInputDialog>
 
 
 // ------------------------------------------ MENU
@@ -35,13 +25,15 @@ public:
     Menu(QObject* parent = nullptr);
     virtual ~Menu();
 
-public slots:
-    void update();
+private slots:
+    void askPseudo();
 
 private:
-    QGraphicsRectItem* qgri = nullptr;
-    QGraphicsTextItem* qgti = nullptr;
-
+    QLayout *Window = nullptr;
+    QPushButton  *playButton = nullptr;
+    QPushButton  *settingsButton = nullptr;
+    QPushButton  *classementButton = nullptr;
+    QString pseudo;
 };
 
 
