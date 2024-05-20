@@ -19,6 +19,10 @@
 #include <QLabel>
 #include <QPixmap>
 #include <QDebug>
+#include <QGraphicsView>
+#include <QWheelEvent>
+#include <QKeyEvent>
+#include <QScrollBar>
 
 
 // ------------------------------------------ MENU
@@ -28,11 +32,19 @@ public:
     Menu(QObject* parent = nullptr);
     virtual ~Menu();
 
+signals:
+    void start_game_signal(QString pseudo);
+
 private slots:
     void askPseudo();
 
+protected:
+    void zoom(QWheelEvent *event);
+    void deplacement_fleche(QKeyEvent *event);
+
 private:
     // QWidget* mainWindow;
+    QGraphicsView* mainView;
     QPushButton  *playButton = nullptr;
     QPushButton  *settingsButton = nullptr;
     QPushButton  *classementButton = nullptr;
@@ -47,6 +59,7 @@ public:
     Game(QObject *parent = nullptr);
 
 private:
+    QGraphicsView *mainView;
     map_bloc *map;
 };
 

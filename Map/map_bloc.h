@@ -16,7 +16,7 @@
 #include <QVBoxLayout>
 #include <QGraphicsProxyWidget>
 #include <QRandomGenerator>
-#include <algorithm>
+#include <QDebug>
 
 // ------------------------------------------ Herbe
 class bloc_herbe : public QObject, public QGraphicsPixmapItem {

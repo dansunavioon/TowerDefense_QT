@@ -21,6 +21,7 @@ bloc_herbe::~bloc_herbe() {
 // ------------------------------------------ Pierre
 bloc_pierre::bloc_pierre(QGraphicsItem *parent) : QObject(), QGraphicsPixmapItem(parent) {
     setPixmap(QPixmap(":/ressources/bloc_pierre.png"));
+    // qDebug() << "pierre";
 }
 
 void bloc_pierre::click_pierre(QGraphicsSceneMouseEvent *event) {
@@ -57,7 +58,7 @@ chateau::~chateau() {
 
 // ------------------------------------------ Map Générale
 map_bloc::map_bloc(QObject *parent) : QGraphicsScene(parent) {
-
+    qDebug() << "bien entrée";
     /* Affichage -> conception maps
     mapX = {{new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe()},
             {new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe()},
@@ -127,6 +128,7 @@ void map_bloc::initializeGrille(int lignes, int colonnes, int squareSize, int ma
     int all_hauteur = marge * 2 + squareSize * lignes;
     this->setSceneRect(0, 0, all_largeur, all_hauteur);
 
+    int i = 0;
     for(int ligne = 0; ligne < lignes; ++ligne) {
         for(int colonne = 0; colonne < colonnes; ++colonne) {
             if(map[ligne][colonne] != nullptr) {
@@ -134,9 +136,13 @@ void map_bloc::initializeGrille(int lignes, int colonnes, int squareSize, int ma
                 int y = marge + ligne * squareSize;
                 map[ligne][colonne]->setPos(x, y);
                 this->addItem(map[ligne][colonne]);
+                //qDebug() << "bloc";
+                qDebug() << "Position de l'objet : (" << map[ligne][colonne]->x() << ", " << map[ligne][colonne]->y() << ")";
+                i+=1;
             }
         }
     }
+    qDebug() << i;
 }
 
 map_bloc::~map_bloc() {

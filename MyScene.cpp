@@ -40,6 +40,11 @@ Menu::Menu(QObject* parent) : QGraphicsScene(parent) {
     QSizeF containerSize = container->sizeHint(); // Utiliser sizeHint pour obtenir une taille approximative
     QPointF containerTopLeft = centerPoint - QPointF(containerSize.width() / 2, containerSize.height() / 2);
     proxyWidget->setPos(containerTopLeft);
+
+    /*
+    connect(mainView, &QGraphicsView::wheelEvent, this, &Menu::zoom);
+    connect(mainView, &QGraphicsView::keyPressEvent, this, &Menu::deplacement_fleche);
+    */
 }
 
 Menu::~Menu() {
@@ -52,10 +57,50 @@ void Menu::askPseudo() {
     if (ok && !text.isEmpty()) {
         pseudo = text;
         qDebug() << "Pseudo entered:" << pseudo;
+
+        emit start_game_signal(pseudo);
     }
 }
 
 
+// ------------------------------------------ DEPLACEMENT
+void Menu::zoom(QWheelEvent *event) {
+    QPoint deg = event->angleDelta() / 8;
+    int etape = deg.y() / 15;
+
+    if (!etape) {
+        etape = deg.x() / 15;
+    }
+
+    if (event->angleDelta().y() != 0) {
+        mainView->scale(pow(1.0015, etape), pow(1.0015, etape));
+    }
+    event->accept();
+}
+
+void Menu::deplacement_fleche(QKeyEvent *event) {
+    int step = 25;
+
+    switch (event->key()) {
+        case Qt::Key_Left:
+            mainView->horizontalScrollBar()->setValue(mainView->horizontalScrollBar()->value() - step);
+            break;
+        case Qt::Key_Right:
+            mainView->horizontalScrollBar()->setValue(mainView->horizontalScrollBar()->value() + step);
+            break;
+        case Qt::Key_Up:
+            mainView->verticalScrollBar()->setValue(mainView->verticalScrollBar()->value() - step);
+            break;
+        case Qt::Key_Down:
+            mainView->verticalScrollBar()->setValue(mainView->verticalScrollBar()->value() + step);
+            break;
+        default:
+            break;
+    }
+}
+
+
+// ------------------------------------------ GAME
 Game::Game(QObject *parent) : QGraphicsScene(parent) {
-    // à compléter
+    new map_bloc(this);
 }

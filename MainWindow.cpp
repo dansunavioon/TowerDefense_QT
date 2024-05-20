@@ -5,21 +5,15 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
     this->mainView = new QGraphicsView(this);
     this->mainView->setScene(mainScene);
-
+    /*
     this->mainView->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     this->mainView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-
+    */
     this->setCentralWidget(this->mainView);
 
     this->setWindowTitle("Tower Defense by StudioXY");
-    this->resize(800, 600);  // Game : 1600px/1100px
 
-    /*
-    helpMenu = menuBar()->addMenu(tr("&Help"));
-    QAction* actionHelp = new QAction(tr("&About"), this);
-    connect(actionHelp, SIGNAL(triggered()), this, SLOT(slot_aboutMenu()));
-    helpMenu->addAction(actionHelp);
-    */
+    connect(mainScene, &Menu::start_game_signal, this, &MainWindow::start_game);
 }
 
 
@@ -27,11 +21,8 @@ MainWindow::~MainWindow(){
 
 }
 
-/*
-void MainWindow::slot_aboutMenu(){
-    QMessageBox msgBox;
-    msgBox.setText("A small QT/C++ projet...");
-    msgBox.setModal(true); // on souhaite que la fenetre soit modale i.e qu'on ne puisse plus cliquer ailleurs
-    msgBox.exec();
+void MainWindow::start_game(QString pseudo) {
+    this->mainView->setFixedSize(1600, 1100);
+    this->secondeScene = new Game(this);
+    this->mainView->setScene(secondeScene);
 }
-*/

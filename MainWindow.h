@@ -8,22 +8,25 @@
 #include <QAction>
 #include <QMessageBox>
 
+
+
 #include "MyScene.h"
 
 class MainWindow : public QMainWindow {
-    Q_OBJECT
+Q_OBJECT
 
-    private :
-        Menu* mainScene;
-        QGraphicsView* mainView;
+private :
+    Menu* mainScene;
+    Game* secondeScene;
+    QGraphicsView* mainView;
 
 
-    public:
-        MainWindow(QWidget* parent = nullptr);
-        virtual ~MainWindow();
+public:
+    MainWindow(QWidget* parent = nullptr);
+    virtual ~MainWindow();
 
-    public slots:
-        // void slot_aboutMenu();
+private slots:
+    void start_game(QString pseudo);
 };
 
 
