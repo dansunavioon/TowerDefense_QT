@@ -41,3 +41,7 @@ void enemy::recevoir_degats(int degats) {
 void enemy::avancer() {
     // a compléter
 }
+
+enemy::~enemy() {
+
+}

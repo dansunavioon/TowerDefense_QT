@@ -54,3 +54,7 @@ void tower::tirer() {
     enemy_cible();
     attaquer_ennemi();
 }
+
+tower::~tower() {
+
+}

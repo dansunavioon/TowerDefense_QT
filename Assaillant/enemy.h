@@ -14,6 +14,7 @@ class enemy : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
     enemy(int ligne, int colonne, QGraphicsItem *parent = nullptr);
+    virtual ~enemy();
 
     void recevoir_degats(int degats);
     void avancer();

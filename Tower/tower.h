@@ -17,6 +17,7 @@ Q_OBJECT
 
 public:
     tower(QGraphicsItem *parent = nullptr);
+    virtual ~tower();
 
     void enemy_cible();
     void attaquer_ennemi();

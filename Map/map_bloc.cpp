@@ -13,6 +13,10 @@ bloc_herbe::bloc_herbe(QGraphicsItem *parent) : QObject(), QGraphicsPixmapItem(p
     setRotation(rotation);
 }
 
+bloc_herbe::~bloc_herbe() {
+
+}
+
 
 // ------------------------------------------ Pierre
 bloc_pierre::bloc_pierre(QGraphicsItem *parent) : QObject(), QGraphicsPixmapItem(parent) {
@@ -24,10 +28,18 @@ void bloc_pierre::click_pierre(QGraphicsSceneMouseEvent *event) {
     QMessageBox::information(nullptr, "Bloc de Pierre", "Clic sur le bloc de pierre !");
 }
 
+bloc_pierre::~bloc_pierre() {
+
+}
+
 
 // ------------------------------------------ Chemin
 bloc_chemin::bloc_chemin(QGraphicsItem *parent) : QObject(), QGraphicsPixmapItem(parent) {
     setPixmap(QPixmap(":/ressources/bloc_chemin.png"));
+}
+
+bloc_chemin::~bloc_chemin() {
+
 }
 
 
@@ -38,21 +50,27 @@ void chateau::perdre_vie(int degats) {
     progressBar->setValue(vie);
 }
 
+chateau::~chateau() {
+
+}
+
 
 // ------------------------------------------ Map Générale
 map_bloc::map_bloc(QObject *parent) : QGraphicsScene(parent) {
-    initializeGrille(8, 12, 125, 50);
-}
+    QVector<QGraphicsItem*> l0 = {new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe()};
+    QVector<QGraphicsItem*> l1 = {new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new chateau()};
+    QVector<QGraphicsItem*> l2 = {new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe(), new bloc_pierre(), new bloc_chemin(), new bloc_pierre(), new bloc_herbe()};
+    QVector<QGraphicsItem*> l3 = {new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_pierre(), new bloc_pierre(), new bloc_chemin(), new bloc_pierre(), new bloc_herbe()};
+    QVector<QGraphicsItem*> l4 = {new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_chemin(), new bloc_pierre(), new bloc_chemin(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new bloc_pierre(), new bloc_herbe()};
+    QVector<QGraphicsItem*> l5 = {new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_pierre(), new bloc_chemin(), new bloc_pierre(), new bloc_chemin(), new bloc_pierre(), new bloc_chemin(), new bloc_pierre(), new bloc_herbe(), new bloc_herbe()};
+    QVector<QGraphicsItem*> l6 = {new bloc_pierre(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_pierre(), new bloc_herbe(), new bloc_herbe()};
+    QVector<QGraphicsItem*> l7 = {new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe()};
 
-/*
-map_bloc::~map_bloc() {
-    for(int ligne = 0; ligne < grille.size(); ++ligne) {
-        for(int colonne = 0; colonne < grille[ligne].size(); ++colonne) {
-            delete grille[ligne][colonne];
-        }
-    }
+    map1 = {{new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe()}, l1, l2, l3, l4, l5, l6, l7};
+
+
+    // initializeGrille(8, 12, 125, 50);
 }
-pour le moment non utile */
 
 void map_bloc::initializeGrille(int lignes, int colonnes, int squareSize, int marge) {
     int all_largeur = marge * 2 + squareSize * colonnes;
@@ -68,16 +86,20 @@ void map_bloc::initializeGrille(int lignes, int colonnes, int squareSize, int ma
     QVector<QGraphicsItem*> l6 = {new bloc_pierre(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_pierre(), new bloc_herbe(), new bloc_herbe()};
     QVector<QGraphicsItem*> l7 = {new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe()};
 
-    grille = {l0, l1, l2, l3, l4, l5, l6, l7};
+    map1 = {l0, l1, l2, l3, l4, l5, l6, l7};
 
     for(int ligne = 0; ligne < lignes; ++ligne) {
         for(int colonne = 0; colonne < colonnes; ++colonne) {
-            if(grille[ligne][colonne] != nullptr) {
+            if(map1[ligne][colonne] != nullptr) {
                 int x = marge + colonne * squareSize;
                 int y = marge + ligne * squareSize;
-                grille[ligne][colonne]->setPos(x, y);
-                this->addItem(grille[ligne][colonne]);
+                map1[ligne][colonne]->setPos(x, y);
+                this->addItem(map1[ligne][colonne]);
             }
         }
     }
+}
+
+map_bloc::~map_bloc() {
+
 }

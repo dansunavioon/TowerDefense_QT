@@ -16,13 +16,12 @@
 #include <QVBoxLayout>
 #include <QGraphicsProxyWidget>
 
-
-
 // ------------------------------------------ Herbe
 class bloc_herbe : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
     bloc_herbe(QGraphicsItem *parent = nullptr);
+    virtual ~bloc_herbe();
 };
 
 
@@ -31,6 +30,8 @@ class bloc_pierre : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
     bloc_pierre(QGraphicsItem *parent = nullptr);
+    virtual ~bloc_pierre();
+
 protected: // permet de limiter l'appel de cette fonction (depuis l'ext)
     void click_pierre(QGraphicsSceneMouseEvent *event);
 };
@@ -41,6 +42,7 @@ class bloc_chemin : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
     bloc_chemin(QGraphicsItem *parent = nullptr);
+    virtual ~bloc_chemin();
 };
 
 
@@ -66,6 +68,7 @@ public:
         // centre horizontalement et met la barre en bas
         proxyWidget->setPos((pixmap().width() - widget->width()) / 2, pixmap().height());
     }
+    virtual ~chateau();
 
     void perdre_vie(int degats);
 
@@ -82,10 +85,14 @@ class map_bloc : public QGraphicsScene {
     Q_OBJECT
 public:
     explicit map_bloc(QObject *parent = nullptr);
-    // ~map_bloc(); pour le moment non utile
+    virtual ~map_bloc();
 
 private:
-    QVector<QVector<QGraphicsItem*>> grille;
+    QVector<QVector<QGraphicsItem*>> map1;
+    QVector<QVector<QGraphicsItem*>> map2;
+    QVector<QVector<QGraphicsItem*>> map3;
+    QVector<QVector<QGraphicsItem*>> map4;
+    QVector<QVector<QGraphicsItem*>> map5;
     void initializeGrille(int ligne, int colonne, int squareSize, int marge);
 
 };
