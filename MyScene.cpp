@@ -5,7 +5,6 @@ using namespace std;
 
 // ------------------------------------------ MENU
 Menu::Menu(QObject* parent) : QGraphicsScene(parent) {
-
     pseudo = "";
 
     playButton = new QPushButton("Play");
@@ -13,31 +12,36 @@ Menu::Menu(QObject* parent) : QGraphicsScene(parent) {
     settingsButton = new QPushButton("Settings");
     classementButton = new QPushButton("Classement");
 
+    QLabel *logo_TD = new QLabel();
+    QPixmap pixmap(":/ressources/logo.png");
+    logo_TD->setPixmap(pixmap);
+    logo_TD->setAlignment(Qt::AlignCenter);
+
+    qDebug() << logo_TD;
     QHBoxLayout *flayout = new QHBoxLayout();
     QVBoxLayout *layout = new QVBoxLayout();
     flayout->addWidget(playButton);
-
     flayout->addWidget(settingsButton);
+    layout->addWidget(logo_TD);
     layout->addLayout(flayout);
     layout->addWidget(classementButton);
 
-    // Créer un widget pour contenir le layout
     QWidget *container = new QWidget();
     container->setLayout(layout);
 
-
-
-    // Créer un proxy widget pour contenir le widget
     QGraphicsProxyWidget *proxyWidget = new QGraphicsProxyWidget();
     proxyWidget->setWidget(container);
 
-    // Ajouter le proxy widget à la scène
     this->addItem(proxyWidget);
+    this->setSceneRect(0, 0, 800, 600);
 
-
-    // Positionner le proxy widget
-    //proxyWidget->setPos(0, 0);
+    QRectF sceneRect = this->sceneRect();
+    QPointF centerPoint = sceneRect.center();
+    QSizeF containerSize = container->sizeHint(); // Utiliser sizeHint pour obtenir une taille approximative
+    QPointF containerTopLeft = centerPoint - QPointF(containerSize.width() / 2, containerSize.height() / 2);
+    proxyWidget->setPos(containerTopLeft);
 }
+
 Menu::~Menu() {
 
 }

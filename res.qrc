@@ -1,0 +1,12 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>ressources/logo.png</file>
+        <file>ressources/bloc_chemin.png</file>
+        <file>ressources/bloc_herbe.png</file>
+        <file>ressources/bloc_pierre.png</file>
+        <file>ressources/chateau.png</file>
+        <file>ressources/test_enemy.png</file>
+        <file>ressources/test_tower.png</file>
+    </qresource>
+</RCC>

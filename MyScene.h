@@ -16,6 +16,9 @@
 #include <QGraphicsProxyWidget>
 #include <QWidget>
 #include <QInputDialog>
+#include <QLabel>
+#include <QPixmap>
+#include <QDebug>
 
 
 // ------------------------------------------ MENU
@@ -29,7 +32,6 @@ private slots:
     void askPseudo();
 
 private:
-    QLayout *Window = nullptr;
     QPushButton  *playButton = nullptr;
     QPushButton  *settingsButton = nullptr;
     QPushButton  *classementButton = nullptr;

@@ -17,6 +17,7 @@
 #include <QGraphicsProxyWidget>
 
 
+
 // ------------------------------------------ Herbe
 class bloc_herbe : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
