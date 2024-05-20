@@ -15,6 +15,8 @@
 #include <QVector>
 #include <QVBoxLayout>
 #include <QGraphicsProxyWidget>
+#include <QRandomGenerator>
+#include <algorithm>
 
 // ------------------------------------------ Herbe
 class bloc_herbe : public QObject, public QGraphicsPixmapItem {
@@ -88,12 +90,16 @@ public:
     virtual ~map_bloc();
 
 private:
+    // Liste des maps
     QVector<QVector<QGraphicsItem*>> map1;
     QVector<QVector<QGraphicsItem*>> map2;
     QVector<QVector<QGraphicsItem*>> map3;
     QVector<QVector<QGraphicsItem*>> map4;
     QVector<QVector<QGraphicsItem*>> map5;
-    void initializeGrille(int ligne, int colonne, int squareSize, int marge);
+    // Vecteur de maps
+    QVector<QVector<QVector<QGraphicsItem*>>> all_maps;
+    QVector<QVector<QGraphicsItem*>> selection;
+    void initializeGrille(int ligne, int colonne, int squareSize, int marge, QVector<QVector<QGraphicsItem*>> map);
 
 };
 
