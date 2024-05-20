@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Projet_QT_autogen"
   "Projet_QT_autogen/mocs_compilation.cpp"
-  "Projet_QT_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

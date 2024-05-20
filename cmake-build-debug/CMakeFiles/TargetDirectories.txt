@@ -1,5 +1,4 @@
-/home/riom/CLionProjects/TowerDefense_QT/cmake-build-debug/CMakeFiles/Projet_QT.dir
-/home/riom/CLionProjects/TowerDefense_QT/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/riom/CLionProjects/TowerDefense_QT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/riom/CLionProjects/TowerDefense_QT/cmake-build-debug/CMakeFiles/Projet_QT_autogen_timestamp_deps.dir
-/home/riom/CLionProjects/TowerDefense_QT/cmake-build-debug/CMakeFiles/Projet_QT_autogen.dir
+/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/CMakeFiles/Projet_QT.dir
+/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/CMakeFiles/Projet_QT_autogen.dir

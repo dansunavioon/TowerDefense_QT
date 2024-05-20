@@ -1,14 +1,5 @@
-/home/riom/.cache/JetBrains/RemoteDev/dist/cb1a3f1f02f85_CLion-2024.1.1-aarch64/bin/cmake/linux/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/riom/CLionProjects/TowerDefense_QT -B /home/riom/CLionProjects/TowerDefense_QT/cmake-build-debug
-CMake Deprecation Warning:
-  Support for "Extra Generators" like
-
-    CodeBlocks
-
-  is deprecated and will be removed from a future version of CMake.  IDEs may
-  use the cmake-file-api(7) to view CMake-generated project build trees.
-
-
+C:\WINDOWS\system32\wsl.exe --distribution Debian --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug' && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S '/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT' -B '/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug'"
 -- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
--- Configuring done (0.9s)
--- Generating done (0.1s)
--- Build files have been written to: /home/riom/CLionProjects/TowerDefense_QT/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug
