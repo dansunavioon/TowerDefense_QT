@@ -48,12 +48,13 @@ Menu::~Menu() {
 
 void Menu::askPseudo() {
     bool ok;
-    QString text = QInputDialog::getText(nullptr, tr("Enter Pseudo"),tr("Pseudo:"), QLineEdit::Normal,"", &ok);
+    QString text = QInputDialog::getText(nullptr, tr("Entez votre Pseudo"), tr("Pseudo :"), QLineEdit::Normal, "", &ok, Qt::Dialog | Qt::MSWindowsFixedSizeDialogHint);
     if (ok && !text.isEmpty()) {
         pseudo = text;
         qDebug() << "Pseudo entered:" << pseudo;
     }
 }
+
 
 Game::Game(QObject *parent) : QGraphicsScene(parent) {
     // à compléter

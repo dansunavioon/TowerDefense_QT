@@ -32,6 +32,7 @@ private slots:
     void askPseudo();
 
 private:
+    // QWidget* mainWindow;
     QPushButton  *playButton = nullptr;
     QPushButton  *settingsButton = nullptr;
     QPushButton  *classementButton = nullptr;

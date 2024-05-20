@@ -8,5 +8,6 @@
         <file>ressources/chateau.png</file>
         <file>ressources/test_enemy.png</file>
         <file>ressources/test_tower.png</file>
+        <file>sounds/music1.mp3</file>
     </qresource>
 </RCC>
