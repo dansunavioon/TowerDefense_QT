@@ -5,7 +5,7 @@
 #include "enemy.h"
 #include <QGraphicsScene>
 
-enemy::enemy(int ligne, int colonne, QGraphicsItem *parent) : QGraphicsPixmapItem(parent), sante(100) {
+enemy::enemy(int ligne, int colonne, QGraphicsItem *parent) : QObject(), QGraphicsPixmapItem(parent), sante(100) {
     setPixmap(QPixmap(":/ressources/test_enemy.png"));
 
     setPos(colonne * 125, ligne * 125);

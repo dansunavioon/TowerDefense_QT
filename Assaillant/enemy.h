@@ -10,7 +10,8 @@
 #include <QGraphicsProxyWidget>
 #include <QVBoxLayout>
 
-class enemy : public QGraphicsPixmapItem {
+class enemy : public QObject, public QGraphicsPixmapItem {
+    Q_OBJECT
 public:
     enemy(int ligne, int colonne, QGraphicsItem *parent = nullptr);
 
