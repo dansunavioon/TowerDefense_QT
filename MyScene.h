@@ -44,7 +44,7 @@ protected:
 
 private:
     // QWidget* mainWindow;
-    QGraphicsView* mainView;
+   // QGraphicsView* mainView;
     QPushButton  *playButton = nullptr;
     QPushButton  *settingsButton = nullptr;
     QPushButton  *classementButton = nullptr;
@@ -59,7 +59,7 @@ public:
     Game(QObject *parent = nullptr);
 
 private:
-    QGraphicsView *mainView;
+  //  QGraphicsView *mainView;
     map_bloc *map;
 };
 

@@ -17,7 +17,7 @@ Q_OBJECT
 
 private :
     Menu* mainScene;
-    Game* secondeScene;
+    map_bloc* secondeScene;
     QGraphicsView* mainView;
 
 

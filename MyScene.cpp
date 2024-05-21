@@ -73,7 +73,7 @@ void Menu::zoom(QWheelEvent *event) {
     }
 
     if (event->angleDelta().y() != 0) {
-        mainView->scale(pow(1.0015, etape), pow(1.0015, etape));
+        //mainView->scale(pow(1.0015, etape), pow(1.0015, etape));
     }
     event->accept();
 }
@@ -83,16 +83,16 @@ void Menu::deplacement_fleche(QKeyEvent *event) {
 
     switch (event->key()) {
         case Qt::Key_Left:
-            mainView->horizontalScrollBar()->setValue(mainView->horizontalScrollBar()->value() - step);
+          //  mainView->horizontalScrollBar()->setValue(mainView->horizontalScrollBar()->value() - step);
             break;
         case Qt::Key_Right:
-            mainView->horizontalScrollBar()->setValue(mainView->horizontalScrollBar()->value() + step);
+          //  mainView->horizontalScrollBar()->setValue(mainView->horizontalScrollBar()->value() + step);
             break;
         case Qt::Key_Up:
-            mainView->verticalScrollBar()->setValue(mainView->verticalScrollBar()->value() - step);
+          //  mainView->verticalScrollBar()->setValue(mainView->verticalScrollBar()->value() - step);
             break;
         case Qt::Key_Down:
-            mainView->verticalScrollBar()->setValue(mainView->verticalScrollBar()->value() + step);
+          //  mainView->verticalScrollBar()->setValue(mainView->verticalScrollBar()->value() + step);
             break;
         default:
             break;
