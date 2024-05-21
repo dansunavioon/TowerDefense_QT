@@ -22,7 +22,7 @@ MainWindow::~MainWindow(){
 }
 
 void MainWindow::start_game(QString pseudo) {
-    this->mainView->setFixedSize(1600, 1100);
+    this->mainView->setFixedSize(1300, 900);
     this->secondeScene = new map_bloc(this);
     this->mainView->setScene(secondeScene);
 }

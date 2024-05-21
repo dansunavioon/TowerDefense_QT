@@ -5,6 +5,7 @@
 #include "Map/map_bloc.h"
 #include "Tower/tower.h"
 #include "Assaillant/enemy.h"
+#include "DatabaseManager.h"
 
 #include <QGraphicsItem>
 #include <QTimer>
@@ -23,8 +24,15 @@
 #include <QWheelEvent>
 #include <QKeyEvent>
 #include <QScrollBar>
+#include <QTableWidget>
+#include <QTableWidgetItem>
+#include <QHeaderView>
 
 
+
+void showPlayersList();
+void printPandS();
+void afficherClassement();
 // ------------------------------------------ MENU
 class Menu : public QGraphicsScene {
     Q_OBJECT
@@ -37,6 +45,7 @@ signals:
 
 private slots:
     void askPseudo();
+    void afficherClassement();
 
 protected:
     void zoom(QWheelEvent *event);
@@ -49,6 +58,7 @@ private:
     QPushButton  *settingsButton = nullptr;
     QPushButton  *classementButton = nullptr;
     QString pseudo;
+    QMap<QString, int> classement ;
 };
 
 

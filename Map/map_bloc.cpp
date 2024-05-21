@@ -84,7 +84,6 @@ map_bloc::map_bloc(QObject *parent) : QGraphicsScene(parent) {
             {new bloc_pierre(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_pierre(), new bloc_herbe(), new bloc_herbe()},
             {new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe()}};
 
-    all_maps.resize(5);
     all_maps[1].resize(8);
     for (int i=0;i<8;i++) all_maps[1][i].resize(12);
     all_maps[1] = {{new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe()},
@@ -96,7 +95,6 @@ map_bloc::map_bloc(QObject *parent) : QGraphicsScene(parent) {
             {new bloc_pierre(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_pierre(), new bloc_herbe(), new bloc_herbe()},
             {new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe()}};
 
-    all_maps.resize(5);
     all_maps[2].resize(8);
     for (int i=0;i<8;i++) all_maps[2][i].resize(12);
     all_maps[2] = {{new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe()},
@@ -108,7 +106,6 @@ map_bloc::map_bloc(QObject *parent) : QGraphicsScene(parent) {
             {new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_chemin(), new bloc_pierre(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new chateau()},
             {new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_pierre(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe()}};
 
-    all_maps.resize(5);
     all_maps[3].resize(8);
     for (int i=0;i<8;i++) all_maps[3][i].resize(12);
     all_maps[3] = {{new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe()},
@@ -120,7 +117,6 @@ map_bloc::map_bloc(QObject *parent) : QGraphicsScene(parent) {
             {new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_chemin(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_pierre(), new bloc_herbe()},
             {new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_pierre(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new bloc_chemin(), new chateau()}};
 
-    all_maps.resize(5);
     all_maps[4].resize(8);
     for (int i=0;i<8;i++) all_maps[4][i].resize(12);
     all_maps[4] = {{new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe(), new bloc_herbe()},
@@ -134,10 +130,12 @@ map_bloc::map_bloc(QObject *parent) : QGraphicsScene(parent) {
 
     //all_maps = {map1, map2, map3, map4, map5};
 
-    int indice = rand()%5;
-    selection = &(all_maps[indice]);
+    //int indice = rand()%5;
+    selection = &(all_maps[1]);
 
-    initializeGrille(8, 12, 125, 50);
+    //qDebug() << indice;
+
+    initializeGrille(8, 12, 100, 50);
 }
 
 void map_bloc::initializeGrille(int lignes, int colonnes, int squareSize, int marge) {

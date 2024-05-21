@@ -11,6 +11,7 @@ Menu::Menu(QObject* parent) : QGraphicsScene(parent) {
     connect(playButton, &QPushButton::clicked, this, &Menu::askPseudo);
     settingsButton = new QPushButton("Settings");
     classementButton = new QPushButton("Classement");
+    connect(classementButton, &QPushButton::clicked, this, &Menu::afficherClassement);
 
     QLabel *logo_TD = new QLabel();
     QPixmap pixmap(":/ressources/logo.png");
@@ -52,12 +53,17 @@ Menu::~Menu() {
 }
 
 void Menu::askPseudo() {
+    DatabaseManager dbManager;
     bool ok;
     QString text = QInputDialog::getText(nullptr, tr("Entez votre Pseudo"), tr("Pseudo :"), QLineEdit::Normal, "", &ok, Qt::Dialog | Qt::MSWindowsFixedSizeDialogHint);
     if (ok && !text.isEmpty()) {
         pseudo = text;
         qDebug() << "Pseudo entered:" << pseudo;
-
+        if (dbManager.addPlayer(text)) {
+            qDebug() << "Pseudo entered and added to the database:" << text;
+        } else {
+            qDebug() << "Failed to add pseudo to the database:" << text;
+        }
         emit start_game_signal(pseudo);
     }
 }
@@ -103,4 +109,60 @@ void Menu::deplacement_fleche(QKeyEvent *event) {
 // ------------------------------------------ GAME
 Game::Game(QObject *parent) : QGraphicsScene(parent) {
     new map_bloc(this);
+}
+
+void showPlayersList() {
+    DatabaseManager dbManager; // Créer une instance de DatabaseManager
+    QStringList players = dbManager.getPlayers();
+
+    // Afficher chaque joueur dans la console
+    qDebug() << "List of players:";
+    for (const QString &player : players) {
+        qDebug() << player;
+    }
+}
+
+void printPandS(){
+    DatabaseManager dbManager;
+    QMap<QString, int> playersAndScores = dbManager.getPlayersAndScores();
+    qDebug() << "Current players and scores:";
+    for (auto it = playersAndScores.begin(); it != playersAndScores.end(); ++it) {
+        qDebug() << "Username:" << it.key() << ", Score:" << it.value();
+    }
+}
+
+
+void Menu::afficherClassement() {
+    DatabaseManager dbManager;
+    classement = dbManager.getPlayersAndScores();
+    QWidget *window = new QWidget;
+    QVBoxLayout *layout = new QVBoxLayout(window);
+
+    // Créer le bouton "Retour"
+    QPushButton *boutonRetour = new QPushButton("Retour", window);
+    layout->addWidget(boutonRetour);
+
+    // Créer le tableau
+    QTableWidget *table = new QTableWidget(classement.size(), 2, window);
+    table->setHorizontalHeaderLabels(QStringList() << "Nom" << "Score");
+
+    int row = 0;
+    for (auto it = classement.begin(); it != classement.end(); ++it) {
+        QTableWidgetItem *nameItem = new QTableWidgetItem(it.key());
+        QTableWidgetItem *scoreItem = new QTableWidgetItem(QString::number(it.value()));
+
+        table->setItem(row, 0, nameItem);
+        table->setItem(row, 1, scoreItem);
+        ++row;
+    }
+
+    table->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    layout->addWidget(table);
+
+    window->setLayout(layout);
+    window->setWindowTitle("Tableau de Classement");
+    window->resize(400, 300);
+    window->show();
+
+    QObject::connect(boutonRetour, &QPushButton::clicked, window, &QWidget::close);
 }
