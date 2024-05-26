@@ -473,6 +473,17 @@ CMakeFiles/Projet_QT.dir/Assaillant/enemy.cpp.o: /mnt/c/Users/damra/OneDrive/Bur
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Map/map_bloc.h \
+  /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
@@ -1398,6 +1409,17 @@ CMakeFiles/Projet_QT.dir/MainWindow.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C+
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Map/map_bloc.h \
+  /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
@@ -1441,19 +1463,9 @@ CMakeFiles/Projet_QT.dir/MainWindow.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C+
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsEllipseItem \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPen \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Assaillant/enemy.h \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
   /usr/include/c++/12/iostream \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointF \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
@@ -1497,10 +1509,11 @@ CMakeFiles/Projet_QT.dir/MainWindow.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C+
 CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Map/map_bloc.cpp \
   /usr/include/stdc-predef.h \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Map/map_bloc.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
+  /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
   /usr/include/c++/12/type_traits \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -1752,13 +1765,6 @@ CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/
   /usr/include/c++/12/tr1/riemann_zeta.tcc \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qforeach.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
@@ -1886,6 +1892,26 @@ CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/
   /usr/include/c++/12/istream \
   /usr/include/c++/12/bits/istream.tcc \
   /usr/include/c++/12/bits/sstream.tcc \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
@@ -1904,7 +1930,6 @@ CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
@@ -1916,7 +1941,6 @@ CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
@@ -1972,7 +1996,6 @@ CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
@@ -1997,7 +2020,6 @@ CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsEllipseItem \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPen \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/MainWindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
@@ -2024,15 +2046,6 @@ CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Tower/tower.h \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Assaillant/enemy.h \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
   /usr/include/c++/12/iostream \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointF \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
@@ -2488,6 +2501,19 @@ CMakeFiles/Projet_QT.dir/MyScene.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C++/P
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Map/map_bloc.h \
+  /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
@@ -2496,7 +2522,6 @@ CMakeFiles/Projet_QT.dir/MyScene.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C++/P
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
@@ -2552,7 +2577,6 @@ CMakeFiles/Projet_QT.dir/MyScene.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C++/P
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
@@ -2577,19 +2601,9 @@ CMakeFiles/Projet_QT.dir/MyScene.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C++/P
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsEllipseItem \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPen \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Assaillant/enemy.h \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
   /usr/include/c++/12/iostream \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointF \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
@@ -3129,6 +3143,17 @@ CMakeFiles/Projet_QT.dir/Projet_QT_autogen/mocs_compilation.cpp.o: Projet_QT_aut
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Map/map_bloc.h \
+  /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
@@ -3157,16 +3182,6 @@ CMakeFiles/Projet_QT.dir/Projet_QT_autogen/mocs_compilation.cpp.o: Projet_QT_aut
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   Projet_QT_autogen/EWIEGA46WW/moc_DatabaseManager.cpp \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
   Projet_QT_autogen/EWIEGA46WW/moc_MainWindow.cpp \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/MainWindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
@@ -3731,6 +3746,17 @@ CMakeFiles/Projet_QT.dir/Tower/tower.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Map/map_bloc.h \
+  /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
@@ -3760,7 +3786,6 @@ CMakeFiles/Projet_QT.dir/Tower/tower.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsEllipseItem \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPen \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList
 
 CMakeFiles/Projet_QT.dir/main.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/main.cpp \
@@ -4786,6 +4811,14 @@ CMakeFiles/Projet_QT.dir/main.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C++/Proj
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Map/map_bloc.h \
+  /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
@@ -4821,13 +4854,6 @@ CMakeFiles/Projet_QT.dir/main.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C++/Proj
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/Assaillant/enemy.h \
   /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
   /usr/include/c++/12/iostream \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QPointF \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \

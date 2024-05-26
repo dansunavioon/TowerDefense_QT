@@ -91,6 +91,25 @@ map_bloc::map_bloc(QObject  *parent) : QGraphicsScene(parent), countdownValue(3)
     connect(countdownTimer, &QTimer::timeout, this, &map_bloc::updateCountdown);
     countdownTimer->start(1000); // Déclenche l'updateCountdown() toutes les secondes
 
+    scoreText = new QGraphicsTextItem();
+    scoreText->setDefaultTextColor(Qt::black);
+    scoreText->setFont(QFont("Arial", 20));
+    scoreText->setPos(165, 10);
+    addItem(scoreText);
+
+    scoreTimer = new QTimer(this);
+    connect(scoreTimer, &QTimer::timeout, this, &map_bloc::incrementerScore);
+
+
+    // attendre 4s avant de démarer le score
+    QTimer *startTimer = new QTimer(this);
+    connect(startTimer, &QTimer::timeout, [=, this]() {
+        scoreTimer->start(1000);
+        startTimer->deleteLater(); // supprimer le timer
+    });
+    startTimer->start(4000);
+
+
 
     gameTimer = new QTimer(this);
     connect(gameTimer, &QTimer::timeout, this, &map_bloc::maj_game);
@@ -213,10 +232,30 @@ map_bloc::~map_bloc() {
 
 }
 
+void map_bloc::setPlayerPseudo(const QString &pseudo) {
+    playerPseudo = pseudo;
+}
+
+void map_bloc::incrementerScore() {
+    score += 100;
+    // Mettre à jour le texte du score
+    scoreText->setPlainText("Score: " + QString::number(score));
+    scoreText->setPos(165, 10);
+}
+
+void map_bloc::scoreUpdate(int up) {
+    score += up;
+    // Mettre à jour le texte du score
+    scoreText->setPlainText("Score: " + QString::number(score));
+    scoreText->setPos(165, 10);
+}
+
+
 void map_bloc::handleChateauDetruit() {
     // arrêter les timers
     countdownTimer->stop();
     gameTimer->stop();
+    scoreTimer->stop();
     if (spawnTimer) {
         spawnTimer->stop();
     }
@@ -226,8 +265,9 @@ void map_bloc::handleChateauDetruit() {
     dialog->setWindowTitle("Game Over");
 
     QVBoxLayout *layout = new QVBoxLayout();
-    QLabel *scoreLabel = new QLabel("Score: ...");
+    QLabel *scoreLabel = new QLabel("Score: " + QString::number(score));
     QPushButton *recommencerButton = new QPushButton("Recommencer");
+    dbManager.updateScore(playerPseudo, score);
 
     recommencerButton->setStyleSheet("background-color: green; color: white; border: 2px solid black; padding: 5px;");
 

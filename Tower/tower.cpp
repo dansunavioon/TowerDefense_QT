@@ -4,7 +4,7 @@
 
 #include "tower.h"
 
-tower::tower(QGraphicsItem *parent) : QObject(), QGraphicsPixmapItem(parent), degats(20), portee(150), cadence_tir(1000), cible(nullptr) {
+tower::tower(QGraphicsItem *parent) : QObject(), QGraphicsPixmapItem(parent), degats(5), portee(150), cadence_tir(1000), cible(nullptr) {
     setPixmap(QPixmap(":/ressources/tower_basic.png"));
     // Mise à jour de la position du cercle de portée
     qreal centerX = boundingRect().center().x();

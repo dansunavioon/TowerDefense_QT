@@ -30,7 +30,7 @@ public slots:
     void retournerAuMenu();
 
 private slots:
-    void start_game(QString pseudo);
+    void start_game(const QString &pseudo);
 
 
 protected:

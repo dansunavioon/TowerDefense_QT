@@ -59,6 +59,9 @@ enemy::enemy(int ligne, int colonne, QGraphicsItem *parent, map_bloc* mamap, QGr
 void enemy::recevoir_degats(int degats) {
     sante -= degats;
     if(sante <= 0){
+        if (lamap) {
+            lamap->scoreUpdate(500); // Incrémenter le score de +500
+        }
         scene()->removeItem(this);
         delete this;
     } else{

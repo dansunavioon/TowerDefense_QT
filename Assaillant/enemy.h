@@ -41,8 +41,6 @@ private:
     QGraphicsItem* blocprecedent=nullptr;
     QPointF targetPosition;
     QTimer* movementTimer;
-
-
 };
 
 

@@ -16,6 +16,7 @@ public:
     bool addPlayer(const QString &username);
     QStringList getPlayers();
     QMap <QString, int> getPlayersAndScores() const;
+    bool updateScore(const QString &username, int score);
 
 private:
     QSqlDatabase db;

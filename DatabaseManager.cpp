@@ -3,8 +3,6 @@
 //
 
 #include "DatabaseManager.h"
-
-#include "DatabaseManager.h"
 #include <QSqlQuery>
 #include <QSqlError>
 #include <QDebug>
@@ -84,7 +82,7 @@ QStringList DatabaseManager::getPlayers()
 QMap<QString, int> DatabaseManager::getPlayersAndScores() const
 {
     QMap<QString, int> playersAndScores;
-    QSqlQuery query("SELECT username, score FROM players");
+    QSqlQuery query("SELECT username, score FROM players ORDER BY score DESC");
 
     if (!query.exec()) {
         qWarning() << "Failed to execute query:" << query.lastError().text();
@@ -98,4 +96,18 @@ QMap<QString, int> DatabaseManager::getPlayersAndScores() const
     }
 
     return playersAndScores;
+}
+
+bool DatabaseManager::updateScore(const QString &username, int score)
+{
+    QSqlQuery query;
+    query.prepare("UPDATE players SET score = :score WHERE username = :username");
+    query.bindValue(":score", score);
+    query.bindValue(":username", username);
+
+    if (!query.exec()) {
+        qWarning() << "Failed to update score:" << query.lastError();
+        return false;
+    }
+    return true;
 }

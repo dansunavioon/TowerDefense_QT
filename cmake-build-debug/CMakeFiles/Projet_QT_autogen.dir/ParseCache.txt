@@ -5,6 +5,7 @@
  mmc:Q_OBJECT
  mdp:/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Assaillant/enemy.h
  mdp:/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/Projet_QT_autogen/moc_predefs.h
+ mdp:/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/DatabaseManager.h
  mdp:/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Map/map_bloc.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
@@ -289,11 +290,13 @@
  mdp:/usr/include/x86_64-linux-gnu/gnu/stubs.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QList
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QMap
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QObject
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QRandomGenerator
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QRect
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QSize
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QVector
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h
@@ -422,6 +425,11 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPixmapItem
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsProxyWidget
@@ -825,6 +833,7 @@
  mmc:Q_OBJECT
  mdp:/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Map/map_bloc.h
  mdp:/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/Projet_QT_autogen/moc_predefs.h
+ mdp:/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/DatabaseManager.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
  mdp:/usr/include/asm-generic/errno.h
@@ -1108,11 +1117,13 @@
  mdp:/usr/include/x86_64-linux-gnu/gnu/stubs.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QList
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QMap
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QObject
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QRandomGenerator
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QRect
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QSize
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QVector
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h
@@ -1241,6 +1252,11 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPixmapItem
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsProxyWidget
@@ -1284,6 +1300,7 @@
  mdp:/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Tower/tower.h
  mdp:/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/Projet_QT_autogen/moc_predefs.h
  mdp:/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Assaillant/enemy.h
+ mdp:/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/DatabaseManager.h
  mdp:/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Map/map_bloc.h
  mdp:/usr/include/alloca.h
  mdp:/usr/include/asm-generic/errno-base.h
@@ -1568,11 +1585,13 @@
  mdp:/usr/include/x86_64-linux-gnu/gnu/stubs.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QList
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QMap
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QObject
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QRandomGenerator
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QRect
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QSize
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/QVector
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h
@@ -1702,6 +1721,11 @@
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/QSqlDatabase
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/qsqldatabase.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsql-config.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h
+ mdp:/usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlglobal.h
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsEllipseItem
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsItem
  mdp:/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPixmapItem

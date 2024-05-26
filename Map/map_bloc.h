@@ -5,6 +5,8 @@
 #ifndef PROJET_QT_MAP_BLOC_H
 #define PROJET_QT_MAP_BLOC_H
 
+#include "../DatabaseManager.h"
+
 #include <QGraphicsScene>
 #include <QGraphicsItem>
 #include <QRandomGenerator>
@@ -120,6 +122,9 @@ public:
     int spawn_enemy = 0;
 
     void wheelEvent(QWheelEvent *event);
+    void scoreUpdate(int up);
+
+    void setPlayerPseudo(const QString &pseudo);
 
 public slots:
     void new_tower(bloc_pierre *bloc);
@@ -142,6 +147,8 @@ private slots:
         }
     }
 
+    void incrementerScore();
+
 protected :
     void maj_game();
     void function_spawn_enemy();
@@ -158,9 +165,16 @@ private:
     QTimer *gameTimer;
     QTimer *spawnTimer;
 
+    int score = 0;
+    QTimer *scoreTimer;
+    QGraphicsTextItem *scoreText;
+
     QTimer* countdownTimer;
     QGraphicsTextItem* countdownText;
     int countdownValue; // valeur initiale du compte à rebours
+
+    QString playerPseudo;
+    DatabaseManager dbManager;
 
     friend class enemy;
     friend class chateau;

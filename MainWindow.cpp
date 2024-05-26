@@ -1,4 +1,5 @@
 #include "MainWindow.h"
+#include "Map/map_bloc.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
     this->mainScene = new Menu(this);
@@ -21,11 +22,13 @@ MainWindow::~MainWindow(){
 
 }
 
-void MainWindow::start_game(QString pseudo) {
+void MainWindow::start_game(const QString &pseudo) {
     this->mainView->setFixedSize(1300, 900);
     this->secondeScene = new map_bloc(this);
     this->mainView->setScene(secondeScene);
     connect(secondeScene, &map_bloc::abandonGame, this, &MainWindow::retournerAuMenu);
+
+    secondeScene->setPlayerPseudo(pseudo);
 
     // Activer le défilement avec la molette de la souris
     this->mainView->setMouseTracking(true);
