@@ -166,6 +166,30 @@ Assaillant/enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/Assaillant/enemy.cpp.s
 .PHONY : Assaillant/enemy.cpp.s
 
+DatabaseManager.o: DatabaseManager.cpp.o
+.PHONY : DatabaseManager.o
+
+# target to build an object file
+DatabaseManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.o
+.PHONY : DatabaseManager.cpp.o
+
+DatabaseManager.i: DatabaseManager.cpp.i
+.PHONY : DatabaseManager.i
+
+# target to preprocess a source file
+DatabaseManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.i
+.PHONY : DatabaseManager.cpp.i
+
+DatabaseManager.s: DatabaseManager.cpp.s
+.PHONY : DatabaseManager.s
+
+# target to generate assembly for a file
+DatabaseManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.s
+.PHONY : DatabaseManager.cpp.s
+
 MainWindow.o: MainWindow.cpp.o
 .PHONY : MainWindow.o
 
@@ -334,6 +358,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+volume_setting.o: volume_setting.cpp.o
+.PHONY : volume_setting.o
+
+# target to build an object file
+volume_setting.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/volume_setting.cpp.o
+.PHONY : volume_setting.cpp.o
+
+volume_setting.i: volume_setting.cpp.i
+.PHONY : volume_setting.i
+
+# target to preprocess a source file
+volume_setting.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/volume_setting.cpp.i
+.PHONY : volume_setting.cpp.i
+
+volume_setting.s: volume_setting.cpp.s
+.PHONY : volume_setting.s
+
+# target to generate assembly for a file
+volume_setting.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Projet_QT.dir/build.make CMakeFiles/Projet_QT.dir/volume_setting.cpp.s
+.PHONY : volume_setting.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -347,6 +395,9 @@ help:
 	@echo "... Assaillant/enemy.o"
 	@echo "... Assaillant/enemy.i"
 	@echo "... Assaillant/enemy.s"
+	@echo "... DatabaseManager.o"
+	@echo "... DatabaseManager.i"
+	@echo "... DatabaseManager.s"
 	@echo "... MainWindow.o"
 	@echo "... MainWindow.i"
 	@echo "... MainWindow.s"
@@ -368,6 +419,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... volume_setting.o"
+	@echo "... volume_setting.i"
+	@echo "... volume_setting.s"
 .PHONY : help
 
 

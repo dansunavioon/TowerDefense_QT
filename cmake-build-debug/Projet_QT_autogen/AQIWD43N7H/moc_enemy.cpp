@@ -57,7 +57,7 @@ Q_CONSTINIT static const uint qt_meta_data_enemy[] = {
 };
 
 Q_CONSTINIT const QMetaObject enemy::staticMetaObject = { {
-    QMetaObject::SuperData::link<QGraphicsScene::staticMetaObject>(),
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_enemy.offsetsAndSizes,
     qt_meta_data_enemy,
     qt_static_metacall,
@@ -87,12 +87,14 @@ void *enemy::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_enemy.stringdata0))
         return static_cast<void*>(this);
-    return QGraphicsScene::qt_metacast(_clname);
+    if (!strcmp(_clname, "QGraphicsPixmapItem"))
+        return static_cast< QGraphicsPixmapItem*>(this);
+    return QObject::qt_metacast(_clname);
 }
 
 int enemy::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QGraphicsScene::qt_metacall(_c, _id, _a);
+    _id = QObject::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

@@ -7,14 +7,16 @@
 	"INCLUDE_DIR" : "/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/Projet_QT_autogen/include",
 	"INPUTS" : 
 	[
+		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/sounds/music2.mp3",
 		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/sounds/music1.mp3",
+		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/sounds/music3.mp3",
 		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/ressources/bloc_chemin.png",
-		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/ressources/test_tower.png",
-		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/ressources/test_enemy.png",
+		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/ressources/enemy_basic.png",
 		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/ressources/bloc_herbe.png",
 		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/ressources/logo.png",
 		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/ressources/chateau.png",
-		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/ressources/bloc_pierre.png"
+		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/ressources/bloc_pierre.png",
+		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/ressources/tower_basic.png"
 	],
 	"LOCK_FILE" : "/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/CMakeFiles/Projet_QT_autogen.dir/AutoRcc_res_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

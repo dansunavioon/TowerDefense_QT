@@ -7,6 +7,7 @@
 #include <QMenuBar>
 #include <QAction>
 #include <QMessageBox>
+#include <QWheelEvent>
 
 
 
@@ -25,8 +26,15 @@ public:
     MainWindow(QWidget* parent = nullptr);
     virtual ~MainWindow();
 
+public slots:
+    void retournerAuMenu();
+
 private slots:
     void start_game(QString pseudo);
+
+
+protected:
+    bool eventFilter(QObject *obj, QEvent *event);
 };
 
 

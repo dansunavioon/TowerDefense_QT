@@ -46,9 +46,9 @@ signals:
 private slots:
     void askPseudo();
     void afficherClassement();
+    void showVolumeSettings();
 
 protected:
-    void zoom(QWheelEvent *event);
     void deplacement_fleche(QKeyEvent *event);
 
 private:
@@ -60,19 +60,6 @@ private:
     QString pseudo;
     QMap<QString, int> classement ;
 };
-
-
-// ------------------------------------------ JEU
-class Game : public QGraphicsScene {
-    Q_OBJECT
-public:
-    Game(QObject *parent = nullptr);
-
-private:
-  //  QGraphicsView *mainView;
-    map_bloc *map;
-};
-
 
 
 #endif //CPP_QT_TPMINIPROJET_MYSCENE_H

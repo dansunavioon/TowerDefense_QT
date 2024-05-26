@@ -11,6 +11,9 @@
 #include <QGraphicsEllipseItem>
 #include <QTimer>
 #include <QPen>
+#include <QDebug>
+#include <QObject>
+#include <QList>
 
 class tower : public QObject, public QGraphicsPixmapItem {
 Q_OBJECT
@@ -31,7 +34,10 @@ private:
     qreal portee;
     int cadence_tir;
     QTimer *minuteur_tir;
+    // QTimer *minuteur_cible;
+    QTimer *attaqueTimer;
     enemy *cible;
+    QList<enemy*> ennemisDansPortee;
 };
 
 

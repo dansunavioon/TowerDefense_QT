@@ -186,6 +186,39 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfig.cmake",
+		"/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlDependencies.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets-none.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaConfigVersionImpl.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaConfig.cmake",
+		"/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaDependencies.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+		"/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkDependencies.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkTargets-none.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkVersionlessTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaTargets-none.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaAdditionalTargetInfo.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaVersionlessTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaPlugins.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6QGstreamerMediaPluginConfig.cmake",
+		"/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6QGstreamerMediaPluginTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6QGstreamerMediaPluginTargets-none.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6QGstreamerMediaPluginAdditionalTargetInfo.cmake",
 		"/usr/share/cmake-3.25/Modules/GNUInstallDirs.cmake",
 		"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/res.qrc"
 	],
@@ -198,6 +231,12 @@
 			"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Assaillant/enemy.h",
 			"MU",
 			"AQIWD43N7H/moc_enemy.cpp",
+			null
+		],
+		[
+			"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/DatabaseManager.h",
+			"MU",
+			"EWIEGA46WW/moc_DatabaseManager.cpp",
 			null
 		],
 		[
@@ -223,12 +262,26 @@
 			"MU",
 			"TE7LP5QV6X/moc_tower.cpp",
 			null
+		],
+		[
+			"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/volume_setting.h",
+			"MU",
+			"EWIEGA46WW/moc_volume_setting.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/Projet_QT_autogen/include",
 	"MOC_COMPILATION_FILE" : "/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/Projet_QT_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_MULTIMEDIA_LIB",
+		"QT_NETWORK_LIB",
+		"QT_SQL_LIB",
+		"QT_WIDGETS_LIB"
+	],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -243,6 +296,9 @@
 		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
 		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
 		"/usr/include/x86_64-linux-gnu/qt6/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt6/QtSql",
+		"/usr/include/x86_64-linux-gnu/qt6/QtMultimedia",
+		"/usr/include/x86_64-linux-gnu/qt6/QtNetwork",
 		"/usr/include",
 		"/usr/include/c++/12",
 		"/usr/include/x86_64-linux-gnu/c++/12",
@@ -288,6 +344,11 @@
 			null
 		],
 		[
+			"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/DatabaseManager.cpp",
+			"MU",
+			null
+		],
+		[
 			"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/MainWindow.cpp",
 			"MU",
 			null
@@ -309,6 +370,11 @@
 		],
 		[
 			"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/volume_setting.cpp",
 			"MU",
 			null
 		]

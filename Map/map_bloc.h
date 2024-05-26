@@ -17,6 +17,9 @@
 #include <QGraphicsProxyWidget>
 #include <QRandomGenerator>
 #include <QDebug>
+#include <QGraphicsTextItem>
+#include <QTimer>
+#include <QPushButton>
 
 // ------------------------------------------ Herbe
 class bloc_herbe : public QObject, public QGraphicsPixmapItem {
@@ -34,8 +37,11 @@ public:
     bloc_pierre(QGraphicsItem *parent = nullptr);
     virtual ~bloc_pierre();
 
+signals:
+    void clicked(bloc_pierre *bloc);
+
 protected: // permet de limiter l'appel de cette fonction (depuis l'ext)
-    void click_pierre(QGraphicsSceneMouseEvent *event);
+    void mousePressEvent(QGraphicsSceneMouseEvent *event);
 };
 
 
@@ -52,10 +58,27 @@ public:
 class chateau : public QObject, public QGraphicsPixmapItem {
     Q_OBJECT
 public:
-    chateau(QGraphicsItem *parent = nullptr) : QObject(), QGraphicsPixmapItem(QPixmap(":/ressources/chateau.png"), parent), vie(100), max_vie(100) {
+    chateau(QGraphicsItem *parent = nullptr)
+            : QObject(), QGraphicsPixmapItem(QPixmap(":/ressources/chateau.png"), parent), vie(100), max_vie(100) {
         progressBar = new QProgressBar();
         progressBar->setRange(0, max_vie);
         progressBar->setValue(vie);
+        progressBar->update();
+
+        //progressBar->setFixedWidth(pixmap().width());
+        progressBar->setStyleSheet(
+                "QProgressBar {"
+                "  border: 1px solid black;"
+                "  border-radius: 5px;"
+                "  background: white;"
+                "  text-align: center;"
+                "}"
+                "QProgressBar::chunk {"
+                "  background-color: #75CA3B;"
+                "  border-radius: 5px;"
+                "}");
+
+        progressBar->setFormat("%p% (%v/%m)");
 
         QVBoxLayout *layout = new QVBoxLayout();
         layout->addWidget(progressBar);
@@ -63,16 +86,22 @@ public:
 
         QWidget *widget = new QWidget();
         widget->setLayout(layout);
+        //widget->setFixedSize(progressBar->sizeHint().width(), progressBar->sizeHint().height());
 
         // poxyWidget -> afficher la progressbar sur le chateau
         proxyWidget = new QGraphicsProxyWidget(this);
         proxyWidget->setWidget(widget);
-        // centre horizontalement et met la barre en bas
-        proxyWidget->setPos((pixmap().width() - widget->width()) / 2, pixmap().height());
+        proxyWidget->setPos((pixmap().width() - widget->width()) / 2, -widget->height() - 10);
+
+        proxyWidget->setVisible(true);
+        proxyWidget->show();
     }
     virtual ~chateau();
 
     void perdre_vie(int degats);
+
+signals:
+    void chateauDetruit();
 
 private:
     QProgressBar *progressBar;
@@ -88,19 +117,53 @@ class map_bloc : public QGraphicsScene {
 public:
     explicit map_bloc(QObject *parent = nullptr);
     virtual ~map_bloc();
+    int spawn_enemy = 0;
+
+    void wheelEvent(QWheelEvent *event);
+
+public slots:
+    void new_tower(bloc_pierre *bloc);
+    void handleChateauDetruit();
+
+private slots:
+    void updateCountdown() {
+        if (countdownValue > 0) {
+            countdownText->setPlainText(QString::number(countdownValue));
+            countdownText->setPos((width() - countdownText->boundingRect().width()) / 2, 5);
+            countdownValue--;
+        } else {
+            countdownText->setPlainText("START !");
+            countdownText->setPos((width() - countdownText->boundingRect().width()) / 2, 5);
+            countdownTimer->stop();
+
+            spawnTimer = new QTimer(this);
+            connect(spawnTimer, &QTimer::timeout, this, &map_bloc::function_spawn_enemy);
+            spawnTimer->start(3000); // Crée un nouvel ennemi toutes les 3s
+        }
+    }
+
+protected :
+    void maj_game();
+    void function_spawn_enemy();
+
+signals:
+    void abandonGame(); // Signal pour l'abandon
 
 private:
-    // Liste des maps
-  /*  QVector<QVector<QGraphicsItem*>> map1;
-    QVector<QVector<QGraphicsItem*>> map2;
-    QVector<QVector<QGraphicsItem*>> map3;
-    QVector<QVector<QGraphicsItem*>> map4;
-    QVector<QVector<QGraphicsItem*>> map5;*/
-    // Vecteur de maps
     QVector<QVector<QVector<QGraphicsItem*>>> all_maps;
     QVector<QVector<QGraphicsItem*>>* selection;
     void initializeGrille(int ligne, int colonne, int squareSize, int marge);
+    int tab[4] = {5, 5, 7, 3};
+    map_bloc *map;
+    QTimer *gameTimer;
+    QTimer *spawnTimer;
 
+    QTimer* countdownTimer;
+    QGraphicsTextItem* countdownText;
+    int countdownValue; // valeur initiale du compte à rebours
+
+    friend class enemy;
+    friend class chateau;
 };
 
 #endif //PROJET_QT_MAP_BLOC_H

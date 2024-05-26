@@ -6,8 +6,10 @@
         <file>ressources/bloc_herbe.png</file>
         <file>ressources/bloc_pierre.png</file>
         <file>ressources/chateau.png</file>
-        <file>ressources/test_enemy.png</file>
-        <file>ressources/test_tower.png</file>
+        <file>ressources/enemy_basic.png</file>
+        <file>ressources/tower_basic.png</file>
         <file>sounds/music1.mp3</file>
+        <file>sounds/music2.mp3</file>
+        <file>sounds/music3.mp3</file>
     </qresource>
 </RCC>

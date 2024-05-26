@@ -5,7 +5,7 @@
 		<Option title="Projet_QT"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6\3rdparty\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6\3rdparty\kwin\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Widgets\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6WidgetsTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6CoreTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6GuiTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Core\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Gui\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6DBus\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6DBusTools\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6\3rdparty\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6\3rdparty\kwin\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Widgets\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6WidgetsTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6CoreTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6GuiTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Core\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Gui\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6DBus\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6DBusTools\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Sql\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\;CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Network\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug"/>
@@ -27,12 +27,18 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_SQL_LIB"/>
+					<Add option="-DQT_MULTIMEDIA_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
 					<Add directory="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/Projet_QT_autogen/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt6/QtWidgets"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt6"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt6/QtCore"/>
 					<Add directory="/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt6/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt6/QtSql"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt6/QtMultimedia"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt6/QtNetwork"/>
 					<Add directory="/usr/include/c++/12"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
 					<Add directory="/usr/include/c++/12/backward"/>
@@ -58,12 +64,18 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_SQL_LIB"/>
+					<Add option="-DQT_MULTIMEDIA_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
 					<Add directory="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/Projet_QT_autogen/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt6/QtWidgets"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt6"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt6/QtCore"/>
 					<Add directory="/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/qt6/QtGui"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt6/QtSql"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt6/QtMultimedia"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/qt6/QtNetwork"/>
 					<Add directory="/usr/include/c++/12"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/12"/>
 					<Add directory="/usr/include/c++/12/backward"/>
@@ -116,6 +128,12 @@
 		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Assaillant/enemy.h">
 			<Option target="Projet_QT"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/DatabaseManager.cpp">
+			<Option target="Projet_QT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/DatabaseManager.h">
+			<Option target="Projet_QT"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/MainWindow.cpp">
 			<Option target="Projet_QT"/>
 		</Unit>
@@ -153,6 +171,12 @@
 			<Option target="Projet_QT"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/res.qrc">
+			<Option target="Projet_QT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/volume_setting.cpp">
+			<Option target="Projet_QT"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/volume_setting.h">
 			<Option target="Projet_QT"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/CMakeLists.txt">
@@ -436,6 +460,93 @@
 		</Unit>
 		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6DBusTools\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Sql\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Sql\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Sql\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Sql\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Sql\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Sql\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Sql\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Sql\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaPlugins.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6MultimediaVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6QGstreamerMediaPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6QGstreamerMediaPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6QGstreamerMediaPluginTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia/Qt6QGstreamerMediaPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Multimedia\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Network\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Network\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Network\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Network\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Network\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Network\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Network\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/../../../../../../../../usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Qt6Network\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

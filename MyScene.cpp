@@ -1,4 +1,5 @@
 #include "MyScene.h"
+#include "volume_setting.h"
 
 using namespace std;
 
@@ -10,6 +11,7 @@ Menu::Menu(QObject* parent) : QGraphicsScene(parent) {
     playButton = new QPushButton("Play");
     connect(playButton, &QPushButton::clicked, this, &Menu::askPseudo);
     settingsButton = new QPushButton("Settings");
+    connect(settingsButton, &QPushButton::clicked, this, &Menu::showVolumeSettings);
     classementButton = new QPushButton("Classement");
     connect(classementButton, &QPushButton::clicked, this, &Menu::afficherClassement);
 
@@ -52,6 +54,11 @@ Menu::~Menu() {
 
 }
 
+void Menu::showVolumeSettings() {
+    volume_setting *dialog = new volume_setting();
+    dialog->exec();
+}
+
 void Menu::askPseudo() {
     DatabaseManager dbManager;
     bool ok;
@@ -66,49 +73,6 @@ void Menu::askPseudo() {
         }
         emit start_game_signal(pseudo);
     }
-}
-
-
-// ------------------------------------------ DEPLACEMENT
-void Menu::zoom(QWheelEvent *event) {
-    QPoint deg = event->angleDelta() / 8;
-    int etape = deg.y() / 15;
-
-    if (!etape) {
-        etape = deg.x() / 15;
-    }
-
-    if (event->angleDelta().y() != 0) {
-        //mainView->scale(pow(1.0015, etape), pow(1.0015, etape));
-    }
-    event->accept();
-}
-
-void Menu::deplacement_fleche(QKeyEvent *event) {
-    int step = 25;
-
-    switch (event->key()) {
-        case Qt::Key_Left:
-          //  mainView->horizontalScrollBar()->setValue(mainView->horizontalScrollBar()->value() - step);
-            break;
-        case Qt::Key_Right:
-          //  mainView->horizontalScrollBar()->setValue(mainView->horizontalScrollBar()->value() + step);
-            break;
-        case Qt::Key_Up:
-          //  mainView->verticalScrollBar()->setValue(mainView->verticalScrollBar()->value() - step);
-            break;
-        case Qt::Key_Down:
-          //  mainView->verticalScrollBar()->setValue(mainView->verticalScrollBar()->value() + step);
-            break;
-        default:
-            break;
-    }
-}
-
-
-// ------------------------------------------ GAME
-Game::Game(QObject *parent) : QGraphicsScene(parent) {
-    new map_bloc(this);
 }
 
 void showPlayersList() {
@@ -130,7 +94,6 @@ void printPandS(){
         qDebug() << "Username:" << it.key() << ", Score:" << it.value();
     }
 }
-
 
 void Menu::afficherClassement() {
     DatabaseManager dbManager;
@@ -165,4 +128,24 @@ void Menu::afficherClassement() {
     window->show();
 
     QObject::connect(boutonRetour, &QPushButton::clicked, window, &QWidget::close);
+}
+
+
+void Menu::deplacement_fleche(QKeyEvent *event) {
+    switch (event->key()) {
+        case Qt::Key_Left:
+          // mainView->horizontalScrollBar()->setValue(mainView->horizontalScrollBar()->value() - step);
+            break;
+        case Qt::Key_Right:
+          //  mainView->horizontalScrollBar()->setValue(mainView->horizontalScrollBar()->value() + step);
+            break;
+        case Qt::Key_Up:
+          //  mainView->verticalScrollBar()->setValue(mainView->verticalScrollBar()->value() - step);
+            break;
+        case Qt::Key_Down:
+          //  mainView->verticalScrollBar()->setValue(mainView->verticalScrollBar()->value() + step);
+            break;
+        default:
+            break;
+    }
 }

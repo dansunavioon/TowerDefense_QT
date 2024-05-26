@@ -71,14 +71,16 @@ include CMakeFiles/Projet_QT.dir/flags.make
 
 Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/res.qrc
 Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: CMakeFiles/Projet_QT_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json
+Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/sounds/music2.mp3
 Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/sounds/music1.mp3
+Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/sounds/music3.mp3
 Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/ressources/bloc_chemin.png
-Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/ressources/test_tower.png
-Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/ressources/test_enemy.png
+Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/ressources/enemy_basic.png
 Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/ressources/bloc_herbe.png
 Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/ressources/logo.png
 Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/ressources/chateau.png
 Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/ressources/bloc_pierre.png
+Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/ressources/tower_basic.png
 Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp: /usr/lib/qt6/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for res.qrc"
 	/usr/bin/cmake -E cmake_autorcc /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/cmake-build-debug/CMakeFiles/Projet_QT_autogen.dir/AutoRcc_res_EWIEGA46WW_Info.json Debug
@@ -181,10 +183,38 @@ CMakeFiles/Projet_QT.dir/Assaillant/enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projet_QT.dir/Assaillant/enemy.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/Assaillant/enemy.cpp" -o CMakeFiles/Projet_QT.dir/Assaillant/enemy.cpp.s
 
+CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.o: CMakeFiles/Projet_QT.dir/flags.make
+CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/DatabaseManager.cpp
+CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.o: CMakeFiles/Projet_QT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.o -MF CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.o.d -o CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.o -c "/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/DatabaseManager.cpp"
+
+CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/DatabaseManager.cpp" > CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.i
+
+CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/DatabaseManager.cpp" -o CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.s
+
+CMakeFiles/Projet_QT.dir/volume_setting.cpp.o: CMakeFiles/Projet_QT.dir/flags.make
+CMakeFiles/Projet_QT.dir/volume_setting.cpp.o: /mnt/c/Users/damra/OneDrive/Bureau/C++/Projet\ QT/volume_setting.cpp
+CMakeFiles/Projet_QT.dir/volume_setting.cpp.o: CMakeFiles/Projet_QT.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Projet_QT.dir/volume_setting.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Projet_QT.dir/volume_setting.cpp.o -MF CMakeFiles/Projet_QT.dir/volume_setting.cpp.o.d -o CMakeFiles/Projet_QT.dir/volume_setting.cpp.o -c "/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/volume_setting.cpp"
+
+CMakeFiles/Projet_QT.dir/volume_setting.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Projet_QT.dir/volume_setting.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/volume_setting.cpp" > CMakeFiles/Projet_QT.dir/volume_setting.cpp.i
+
+CMakeFiles/Projet_QT.dir/volume_setting.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Projet_QT.dir/volume_setting.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/volume_setting.cpp" -o CMakeFiles/Projet_QT.dir/volume_setting.cpp.s
+
 CMakeFiles/Projet_QT.dir/Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp.o: CMakeFiles/Projet_QT.dir/flags.make
 CMakeFiles/Projet_QT.dir/Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp.o: Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp
 CMakeFiles/Projet_QT.dir/Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp.o: CMakeFiles/Projet_QT.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Projet_QT.dir/Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Projet_QT.dir/Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Projet_QT.dir/Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp.o -MF CMakeFiles/Projet_QT.dir/Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp.o.d -o CMakeFiles/Projet_QT.dir/Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp.o -c "/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp"
 
 CMakeFiles/Projet_QT.dir/Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp.i: cmake_force
@@ -204,6 +234,8 @@ Projet_QT_OBJECTS = \
 "CMakeFiles/Projet_QT.dir/Tower/tower.cpp.o" \
 "CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.o" \
 "CMakeFiles/Projet_QT.dir/Assaillant/enemy.cpp.o" \
+"CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.o" \
+"CMakeFiles/Projet_QT.dir/volume_setting.cpp.o" \
 "CMakeFiles/Projet_QT.dir/Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp.o"
 
 # External object files for target Projet_QT
@@ -216,15 +248,20 @@ Projet_QT: CMakeFiles/Projet_QT.dir/MyScene.cpp.o
 Projet_QT: CMakeFiles/Projet_QT.dir/Tower/tower.cpp.o
 Projet_QT: CMakeFiles/Projet_QT.dir/Map/map_bloc.cpp.o
 Projet_QT: CMakeFiles/Projet_QT.dir/Assaillant/enemy.cpp.o
+Projet_QT: CMakeFiles/Projet_QT.dir/DatabaseManager.cpp.o
+Projet_QT: CMakeFiles/Projet_QT.dir/volume_setting.cpp.o
 Projet_QT: CMakeFiles/Projet_QT.dir/Projet_QT_autogen/EWIEGA46WW/qrc_res.cpp.o
 Projet_QT: CMakeFiles/Projet_QT.dir/build.make
 Projet_QT: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
+Projet_QT: /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
+Projet_QT: /usr/lib/x86_64-linux-gnu/libQt6Multimedia.so.6.4.2
 Projet_QT: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
-Projet_QT: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 Projet_QT: /usr/lib/x86_64-linux-gnu/libGLX.so
 Projet_QT: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+Projet_QT: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
+Projet_QT: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 Projet_QT: CMakeFiles/Projet_QT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Projet_QT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/damra/OneDrive/Bureau/C++/Projet QT/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Projet_QT"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Projet_QT.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
